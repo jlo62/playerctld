@@ -1,0 +1,11 @@
+[package]
+name = "playerctld"
+version = "0.1.0"
+edition = "2024"
+
+license = "MIT"
+description = "A simple DBus interface for Playerctld"
+readme = "README.md"
+
+[dependencies]
+zbus = "5.13.2"

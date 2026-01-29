@@ -5,7 +5,7 @@ use zbus::{Result, proxy};
     default_service = "org.mpris.MediaPlayer2.playerctld",
     default_path = "/org/mpris/MediaPlayer2"
 )]
-trait Playerctld {
+pub trait Playerctld {
 	#[zbus(signal)]
     fn active_player_change_begin(&self, name: String) -> zbus::Result<()>;
 
